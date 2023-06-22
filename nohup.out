@@ -5463,3 +5463,501 @@ psutil.NoSuchProcess: process no longer exists (pid=48850)
 5000
 5000
 5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=54827)
+5000
+3001
+3001
+3001
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=69303)
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=69556)
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 29, in <module>
+    filtered = list(filter(lambda x: x != "", stdout_lines[1].split(" ")))
+IndexError: list index out of range
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=70030)
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=70107)
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=70169)
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+3001
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=96199)
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=96265)
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 443, in wrapper
+    ret = self._cache[fun]
+AttributeError: 'Process' object has no attribute '_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_common.py", line 446, in wrapper
+    return fun(self)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/__init__.py", line 994, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/Users/viwang/Library/Python/3.10/lib/python/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=96393)
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 1, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 29, in <module>
+    filtered = list(filter(lambda x: x != "", stdout_lines[1].split(" ")))
+IndexError: list index out of range
+5000
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_common.py", line 480, in wrapper
+    raise raise_from(err, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_common.py", line 478, in wrapper
+    return fun(self)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/__init__.py", line 999, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=99195)
+5000
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 29, in <module>
+    filtered = list(filter(lambda x: x != "", stdout_lines[1].split(" ")))
+IndexError: list index out of range
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_common.py", line 480, in wrapper
+    raise raise_from(err, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_common.py", line 478, in wrapper
+    return fun(self)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 381, in _get_pidtaskinfo
+    ret = cext.proc_pidtaskinfo_oneshot(self.pid)
+ProcessLookupError: [Errno 3] No such process (originated from proc_pidinfo())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/viwang/Documents/imperial/projectg/setup/bench/bench.py", line 40, in <module>
+    f.write(f"{p.cpu_percent(interval=0.1)},{p.memory_percent()}\n")
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/__init__.py", line 999, in cpu_percent
+    pt2 = self._proc.cpu_times()
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 346, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 462, in cpu_times
+    rawtuple = self._get_pidtaskinfo()
+  File "/opt/homebrew/lib/python3.10/site-packages/psutil/_psosx.py", line 351, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: process no longer exists (pid=1982)
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000

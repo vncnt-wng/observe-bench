@@ -21,4 +21,5 @@ export default function () {
     check(res, { 'status was 200': (r) => r.status == 200 });
     // console.log("checked")
     sleep(15 / 1000);
+    // sleep(50 / 1000);
 }
